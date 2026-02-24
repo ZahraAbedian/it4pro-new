@@ -1,0 +1,33 @@
+{% extends "mauth/authBase.html" %}
+{% block form %}
+<form action="" class="loginForm" method="post" >
+    {% csrf_token %}
+    <h1 class="loginFormTitle">login page</h1>
+    <h2 class="messageTitle"><pre>{{ loginMessage }}</pre></h2>
+
+    <div class="loginInputs">
+        <div class="loginBox">
+            <input type="text" placeholder="username or email" name="input" required class="loginInput">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+
+        <div class="loginBox">
+            <input type="password" placeholder="password" name="pass" required class="loginInput">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+        </div>
+
+    </div>
+
+    <div class="loginCheck">
+        <div class="loginCheckBox">
+            <input type="checkbox" class="loginCheckInput" id="userCheck">
+            <label for="userCheck" class="loginCheckLabel">remember me</label>
+        </div>
+        <a href="#" class="loginForgot">forgot password</a>
+    </div>
+    <button type="submit" class="loginBtn"> login</button>
+    <div class="loginRegister">
+        Don't have an account? <a href="/auth/signup">Sign up</a>
+    </div>
+</form>
+{% endblock %}

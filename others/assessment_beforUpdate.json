@@ -1,0 +1,835 @@
+[
+{
+  "model": "assessment.categories",
+  "pk": 4,
+  "fields": {
+    "category": "Availability Management",
+    "information": "Availability",
+    "category_order": 1,
+    "photo": "yTrJpRDp4Z/photo_2024-08-06_21-10-09.jpg",
+    "heading": "Availability Management"
+  }
+},
+{
+  "model": "assessment.categories",
+  "pk": 5,
+  "fields": {
+    "category": "Capacity Management",
+    "information": "capacity",
+    "category_order": 2,
+    "photo": "assessment/static/assessment/questions.jpg",
+    "heading": "Default Heading"
+  }
+},
+{
+  "model": "assessment.categories",
+  "pk": 6,
+  "fields": {
+    "category": "Change Management",
+    "information": "change",
+    "category_order": 3,
+    "photo": "assessment/static/assessment/questions.jpg",
+    "heading": "Default Heading"
+  }
+},
+{
+  "model": "assessment.categories",
+  "pk": 7,
+  "fields": {
+    "category": "Configuration Management",
+    "information": "configuration",
+    "category_order": 4,
+    "photo": "assessment/static/assessment/questions.jpg",
+    "heading": "Default Heading"
+  }
+},
+{
+  "model": "assessment.categories",
+  "pk": 8,
+  "fields": {
+    "category": "Service Continuity Management",
+    "information": "continuity",
+    "category_order": 5,
+    "photo": "assessment/static/assessment/questions.jpg",
+    "heading": "Default Heading"
+  }
+},
+{
+  "model": "assessment.categories",
+  "pk": 9,
+  "fields": {
+    "category": "Financial Management",
+    "information": "financial",
+    "category_order": 6,
+    "photo": "assessment/static/assessment/questions.jpg",
+    "heading": "Default Heading"
+  }
+},
+{
+  "model": "assessment.categories",
+  "pk": 10,
+  "fields": {
+    "category": "Incident Management",
+    "information": "incident",
+    "category_order": 7,
+    "photo": "assessment/static/assessment/questions.jpg",
+    "heading": "Default Heading"
+  }
+},
+{
+  "model": "assessment.categories",
+  "pk": 11,
+  "fields": {
+    "category": "Problem Management",
+    "information": "problem",
+    "category_order": 8,
+    "photo": "assessment/static/assessment/questions.jpg",
+    "heading": "Default Heading"
+  }
+},
+{
+  "model": "assessment.categories",
+  "pk": 12,
+  "fields": {
+    "category": "Release Management",
+    "information": "release",
+    "category_order": 9,
+    "photo": "assessment/static/assessment/questions.jpg",
+    "heading": "Default Heading"
+  }
+},
+{
+  "model": "assessment.categories",
+  "pk": 13,
+  "fields": {
+    "category": "Service Level Management",
+    "information": "service level",
+    "category_order": 10,
+    "photo": "assessment/static/assessment/questions.jpg",
+    "heading": "Default Heading"
+  }
+},
+{
+  "model": "assessment.answers",
+  "pk": 1,
+  "fields": {
+    "answer": "Completely"
+  }
+},
+{
+  "model": "assessment.answers",
+  "pk": 2,
+  "fields": {
+    "answer": "Partially"
+  }
+},
+{
+  "model": "assessment.answers",
+  "pk": 3,
+  "fields": {
+    "answer": "Not at all"
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 7,
+  "fields": {
+    "question": "Is the Service Availability Management process clearly defined within the organization, with specific documentation outlining its scope and responsibilities for ensuring service uptime?",
+    "question_fk": 4,
+    "question_order": 1
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 8,
+  "fields": {
+    "question": "Are explicit inputs (e.g., Service Level Agreements (SLAs), availability requirements) and outputs (e.g., availability reports, incident analysis) established for the Service Availability Management workflow?",
+    "question_fk": 4,
+    "question_order": 2
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 9,
+  "fields": {
+    "question": "Is there a documented procedure and an assigned individual responsible for overseeing the execution of Service Availability Management activities and addressing any issues that arise?",
+    "question_fk": 4,
+    "question_order": 3
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 10,
+  "fields": {
+    "question": "Is there a commitment from management to prioritize the maintenance and enhancement of service availability, ensuring timely execution of the Service Availability Management process?",
+    "question_fk": 4,
+    "question_order": 4
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 11,
+  "fields": {
+    "question": "Are routine reports on service availability metrics (e.g., uptime, downtime, Mean Time To Repair) generated and maintained to track performance against defined targets?",
+    "question_fk": 4,
+    "question_order": 5
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 12,
+  "fields": {
+    "question": "Are key performance indicators (KPIs) related to service availability identified (e.g., service uptime percentage, incident response times), and are appropriate tools employed to monitor and evaluate them?",
+    "question_fk": 4,
+    "question_order": 6
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 13,
+  "fields": {
+    "question": "Is relevant information related to service availability, including historical performance data, incidents, and identified risks, systematically collected and utilized for decision-making?",
+    "question_fk": 4,
+    "question_order": 7
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 14,
+  "fields": {
+    "question": "Is there an integrated system in place that facilitates the sharing of information related to service availability among relevant processes (e.g., Incident Management, Problem Management)?",
+    "question_fk": 4,
+    "question_order": 8
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 15,
+  "fields": {
+    "question": "Are stakeholder satisfaction and expectations regarding service availability regularly assessed and measured to ensure alignment with organizational goals and user needs?",
+    "question_fk": 4,
+    "question_order": 9
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 16,
+  "fields": {
+    "question": "Is there a structured approach to using the insights gleaned from reports and performance evaluations to drive continuous improvement in the Service Availability Management process?",
+    "question_fk": 4,
+    "question_order": 10
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 17,
+  "fields": {
+    "question": "Is the Capacity Management process clearly defined within the organization, with specific documentation outlining its scope and responsibilities for managing capacity effectively across services?",
+    "question_fk": 5,
+    "question_order": 1
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 18,
+  "fields": {
+    "question": "Are explicit inputs (e.g., demand forecasts, current usage data) and outputs (e.g., capacity reports, future capacity plans) established for the Capacity Management workflow?",
+    "question_fk": 5,
+    "question_order": 2
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 19,
+  "fields": {
+    "question": "Is there a documented procedure and a designated individual responsible for overseeing the execution of Capacity Management activities and resolving any issues that arise?",
+    "question_fk": 5,
+    "question_order": 3
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 20,
+  "fields": {
+    "question": "Is there a commitment from management to prioritize capacity planning and management activities to ensure the process is executed in a timely manner?",
+    "question_fk": 5,
+    "question_order": 4
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 21,
+  "fields": {
+    "question": "Are regular reports on capacity metrics (e.g., utilization rates, performance against capacity plans) generated and maintained to track capacity performance and identify trends?",
+    "question_fk": 5,
+    "question_order": 5
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 22,
+  "fields": {
+    "question": "Is the Change Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing changes effectively?",
+    "question_fk": 6,
+    "question_order": 1
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 23,
+  "fields": {
+    "question": "Are explicit inputs (e.g., Change Requests, impact assessments) and outputs (e.g., Change schedules, implementation reports) established for the Change Management workflow?",
+    "question_fk": 6,
+    "question_order": 2
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 24,
+  "fields": {
+    "question": "Is there a documented procedure and a designated individual responsible for overseeing the Change Management process and addressing any issues that arise?",
+    "question_fk": 6,
+    "question_order": 3
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 25,
+  "fields": {
+    "question": "Is there a commitment from management to prioritize and execute change requests in a timely manner, ensuring minimal disruption to services?",
+    "question_fk": 6,
+    "question_order": 4
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 26,
+  "fields": {
+    "question": "Are standard reports on change activities (e.g., Change success rates, outstanding Change Requests) regularly generated and maintained to track the effectiveness of the Change Management process?",
+    "question_fk": 6,
+    "question_order": 5
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 27,
+  "fields": {
+    "question": "Is the Change Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing changes effectively?",
+    "question_fk": 7,
+    "question_order": 1
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 28,
+  "fields": {
+    "question": "Is the Change Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing changes effectively?",
+    "question_fk": 7,
+    "question_order": 2
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 29,
+  "fields": {
+    "question": "Is the Change Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing changes effectively?",
+    "question_fk": 9,
+    "question_order": 1
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 30,
+  "fields": {
+    "question": "Is the Change Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing changes effectively?",
+    "question_fk": 9,
+    "question_order": 2
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 31,
+  "fields": {
+    "question": "Is the Change Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing changes effectively?",
+    "question_fk": 10,
+    "question_order": 1
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 32,
+  "fields": {
+    "question": "Is the Change Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing changes effectively?",
+    "question_fk": 10,
+    "question_order": 2
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 33,
+  "fields": {
+    "question": "Is the Change Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing changes effectively?",
+    "question_fk": 11,
+    "question_order": 1
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 34,
+  "fields": {
+    "question": "Is the Change Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing changes effectively?",
+    "question_fk": 11,
+    "question_order": 2
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 35,
+  "fields": {
+    "question": "Is the Change Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing changes effectively?",
+    "question_fk": 11,
+    "question_order": 3
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 36,
+  "fields": {
+    "question": "Is the Change Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing changes effectively?",
+    "question_fk": 12,
+    "question_order": 1
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 37,
+  "fields": {
+    "question": "Is the Change Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing changes effectively?",
+    "question_fk": 8,
+    "question_order": 1
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 38,
+  "fields": {
+    "question": "Is the Change Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing changes effectively?",
+    "question_fk": 13,
+    "question_order": 1
+  }
+},
+{
+  "model": "assessment.questions",
+  "pk": 39,
+  "fields": {
+    "question": "Are explicit inputs (e.g., Service Level Agreements (SLAs), availability requirements) and outputs (e.g., availability reports, incident analysis) established for the Service Availability Management workflow?",
+    "question_fk": 7,
+    "question_order": 3
+  }
+},
+{
+  "model": "assessment.paragraphs",
+  "pk": 1,
+  "fields": {
+    "paragraph": "kjkjkjkjkjkjk",
+    "paragraph_fk": 4,
+    "paragraph_order": 1
+  }
+},
+{
+  "model": "assessment.paragraphs",
+  "pk": 2,
+  "fields": {
+    "paragraph": "ddsdsdsdsd",
+    "paragraph_fk": 5,
+    "paragraph_order": 2
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 3,
+  "fields": {
+    "user": 1,
+    "question": 10,
+    "answer": 3
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 4,
+  "fields": {
+    "user": 1,
+    "question": 11,
+    "answer": 3
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "question": 7,
+    "answer": 3
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 6,
+  "fields": {
+    "user": 1,
+    "question": 12,
+    "answer": 3
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 7,
+  "fields": {
+    "user": 1,
+    "question": 13,
+    "answer": 3
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 8,
+  "fields": {
+    "user": 1,
+    "question": 17,
+    "answer": 3
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 9,
+  "fields": {
+    "user": 1,
+    "question": 18,
+    "answer": 3
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 10,
+  "fields": {
+    "user": 1,
+    "question": 14,
+    "answer": 2
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 11,
+  "fields": {
+    "user": 1,
+    "question": 15,
+    "answer": 2
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 12,
+  "fields": {
+    "user": 1,
+    "question": 16,
+    "answer": 2
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 13,
+  "fields": {
+    "user": 1,
+    "question": 19,
+    "answer": 3
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 14,
+  "fields": {
+    "user": 1,
+    "question": 20,
+    "answer": 3
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 15,
+  "fields": {
+    "user": 1,
+    "question": 21,
+    "answer": 2
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 16,
+  "fields": {
+    "user": 1,
+    "question": 27,
+    "answer": 1
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 17,
+  "fields": {
+    "user": 1,
+    "question": 28,
+    "answer": 1
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 18,
+  "fields": {
+    "user": 1,
+    "question": 33,
+    "answer": 2
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 19,
+  "fields": {
+    "user": 1,
+    "question": 34,
+    "answer": 2
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 20,
+  "fields": {
+    "user": 1,
+    "question": 35,
+    "answer": 2
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 21,
+  "fields": {
+    "user": 1,
+    "question": 31,
+    "answer": 2
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 22,
+  "fields": {
+    "user": 1,
+    "question": 32,
+    "answer": 2
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 23,
+  "fields": {
+    "user": 1,
+    "question": 38,
+    "answer": 2
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 24,
+  "fields": {
+    "user": 1,
+    "question": 36,
+    "answer": 3
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 25,
+  "fields": {
+    "user": 1,
+    "question": 29,
+    "answer": 2
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 26,
+  "fields": {
+    "user": 1,
+    "question": 30,
+    "answer": 1
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 27,
+  "fields": {
+    "user": 1,
+    "question": 22,
+    "answer": 1
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 28,
+  "fields": {
+    "user": 1,
+    "question": 23,
+    "answer": 1
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 29,
+  "fields": {
+    "user": 1,
+    "question": 24,
+    "answer": 1
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 30,
+  "fields": {
+    "user": 1,
+    "question": 25,
+    "answer": 1
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 31,
+  "fields": {
+    "user": 1,
+    "question": 26,
+    "answer": 1
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 32,
+  "fields": {
+    "user": 1,
+    "question": 39,
+    "answer": 1
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 36,
+  "fields": {
+    "user": 1,
+    "question": 37,
+    "answer": 1
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 37,
+  "fields": {
+    "user": 1,
+    "question": 8,
+    "answer": 1
+  }
+},
+{
+  "model": "assessment.useranswers",
+  "pk": 38,
+  "fields": {
+    "user": 1,
+    "question": 9,
+    "answer": 1
+  }
+},
+{
+  "model": "assessment.usercategories",
+  "pk": 9,
+  "fields": {
+    "user": 1,
+    "category": 5,
+    "score": 0
+  }
+},
+{
+  "model": "assessment.usercategories",
+  "pk": 11,
+  "fields": {
+    "user": 1,
+    "category": 11,
+    "score": 2
+  }
+},
+{
+  "model": "assessment.usercategories",
+  "pk": 12,
+  "fields": {
+    "user": 1,
+    "category": 10,
+    "score": 2
+  }
+},
+{
+  "model": "assessment.usercategories",
+  "pk": 13,
+  "fields": {
+    "user": 1,
+    "category": 13,
+    "score": 2
+  }
+},
+{
+  "model": "assessment.usercategories",
+  "pk": 14,
+  "fields": {
+    "user": 1,
+    "category": 12,
+    "score": 0
+  }
+},
+{
+  "model": "assessment.usercategories",
+  "pk": 15,
+  "fields": {
+    "user": 1,
+    "category": 9,
+    "score": 4
+  }
+},
+{
+  "model": "assessment.usercategories",
+  "pk": 16,
+  "fields": {
+    "user": 1,
+    "category": 6,
+    "score": 5
+  }
+},
+{
+  "model": "assessment.usercategories",
+  "pk": 17,
+  "fields": {
+    "user": 1,
+    "category": 7,
+    "score": 5
+  }
+},
+{
+  "model": "assessment.usercategories",
+  "pk": 20,
+  "fields": {
+    "user": 1,
+    "category": 8,
+    "score": 5
+  }
+},
+{
+  "model": "assessment.usercategories",
+  "pk": 21,
+  "fields": {
+    "user": 1,
+    "category": 4,
+    "score": 2
+  }
+}
+]

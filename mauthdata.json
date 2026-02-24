@@ -1,0 +1,380 @@
+[
+{
+ "model": "mauth.countries",
+ "pk": 1,
+ "fields": {
+  "country": "Iran"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 3,
+ "fields": {
+  "country": "Albania"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 4,
+ "fields": {
+  "country": "Algeria"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 5,
+ "fields": {
+  "country": "Andorra"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 6,
+ "fields": {
+  "country": "Angola"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 7,
+ "fields": {
+  "country": "Antigua and Barbuda"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 8,
+ "fields": {
+  "country": "Argentina"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 9,
+ "fields": {
+  "country": "Armenia"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 10,
+ "fields": {
+  "country": "Australia"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 11,
+ "fields": {
+  "country": "Austria"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 12,
+ "fields": {
+  "country": "Azerbaijan"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 13,
+ "fields": {
+  "country": "Brazil"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 14,
+ "fields": {
+  "country": "China"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 15,
+ "fields": {
+  "country": "Canada"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 16,
+ "fields": {
+  "country": "Canada"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 17,
+ "fields": {
+  "country": "Germany"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 18,
+ "fields": {
+  "country": "France"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 19,
+ "fields": {
+  "country": "Spain"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 21,
+ "fields": {
+  "country": "Finland"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 22,
+ "fields": {
+  "country": "Greece"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 23,
+ "fields": {
+  "country": "Hungary"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 24,
+ "fields": {
+  "country": "Ireland"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 25,
+ "fields": {
+  "country": "Italy"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 26,
+ "fields": {
+  "country": "Iceland"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 27,
+ "fields": {
+  "country": "Japan"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 28,
+ "fields": {
+  "country": "Korea, South"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 29,
+ "fields": {
+  "country": "Malaysia"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 30,
+ "fields": {
+  "country": "Mexico"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 31,
+ "fields": {
+  "country": "New Zealand"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 32,
+ "fields": {
+  "country": "Netherlands"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 33,
+ "fields": {
+  "country": "Norway"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 34,
+ "fields": {
+  "country": "Oman"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 35,
+ "fields": {
+  "country": "Russia"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 36,
+ "fields": {
+  "country": "Switzerland"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 37,
+ "fields": {
+  "country": "Sweden"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 38,
+ "fields": {
+  "country": "South Africa"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 39,
+ "fields": {
+  "country": "South Africa"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 40,
+ "fields": {
+  "country": "Turkey"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 41,
+ "fields": {
+  "country": "United Kingdom"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 42,
+ "fields": {
+  "country": "United States of America"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 43,
+ "fields": {
+  "country": "United Arab Emirates"
+ }
+},
+{
+ "model": "mauth.countries",
+ "pk": 44,
+ "fields": {
+  "country": "Ukraine"
+ }
+},
+{
+ "model": "mauth.industries",
+ "pk": 2,
+ "fields": {
+  "industry": "Agriculture, Forestry, Fishing and Hunting (NAICS 11)"
+ }
+},
+{
+ "model": "mauth.industries",
+ "pk": 3,
+ "fields": {
+  "industry": "Mining, Quarrying, and Oil and Gas Extraction (NAICS 21)"
+ }
+},
+{
+ "model": "mauth.industries",
+ "pk": 4,
+ "fields": {
+  "industry": "Construction (NAICS 23)"
+ }
+},
+{
+ "model": "mauth.industries",
+ "pk": 5,
+ "fields": {
+  "industry": "Manufacturing (NAICS 31-33)"
+ }
+},
+{
+ "model": "mauth.industries",
+ "pk": 6,
+ "fields": {
+  "industry": "Wholesale Trade (NAICS 42)"
+ }
+},
+{
+ "model": "mauth.industries",
+ "pk": 7,
+ "fields": {
+  "industry": "Retail Trade (NAICS 44-45)"
+ }
+},
+{
+ "model": "mauth.industries",
+ "pk": 8,
+ "fields": {
+  "industry": "Transportation and Warehousing (NAICS 48-49)"
+ }
+},
+{
+ "model": "mauth.industries",
+ "pk": 9,
+ "fields": {
+  "industry": "Information (NAICS 51)"
+ }
+},
+{
+ "model": "mauth.industries",
+ "pk": 10,
+ "fields": {
+  "industry": "Finance and Insurance (NAICS 52)"
+ }
+},
+{
+ "model": "mauth.industries",
+ "pk": 11,
+ "fields": {
+  "industry": "Professional, Scientific, and Technical Services (NAICS 54)"
+ }
+},
+{
+ "model": "mauth.industries",
+ "pk": 12,
+ "fields": {
+  "industry": "Health Care and Social Assistance (NAICS 62)"
+ }
+},
+{
+ "model": "mauth.industries",
+ "pk": 13,
+ "fields": {
+  "industry": "Arts, Entertainment, and Recreation (NAICS 71)"
+ }
+}
+]

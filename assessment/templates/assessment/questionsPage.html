@@ -1,0 +1,174 @@
+{% extends "assessment/baseMainPage.html" %}
+{% block mainPageContent %}
+{% load static %}
+<script src="{% static 'assessment/questionPage.js' %}" ></script>
+<div class="mainPageContent">
+    {% if cco == 0 %}
+        <!-- top image categories -->
+        <img src="{% static 'assessment/banner/main-Banner.jpg' %}" class="mainPageContentImg" alt="Image Not Found!">
+
+        
+        <!-- category list -->
+        <div class="categoriesLists">
+            <p class="categoriesListsItems categoryActive" style="min-width: 105px;">Start</p>
+            {% for cat in categories %}
+                {% if cat.category_order in completedCategories %}
+                    <p class="categoriesListsItems greebBg">{{cat}}</p>
+                {% else %}
+                    <p class="categoriesListsItems redBg">{{cat}}</p>
+                    <!-- {% if cat.category_order <= mcod %}
+                        <p class="categoriesListsItems redBg">{{cat}}</p>
+                    {% else %}
+                        <p class="categoriesListsItems">{{cat}}</p>
+                    {% endif %} -->
+                {% endif %}
+            {% endfor %}
+            <p class="categoriesListsItems" style="min-width: 105px;">End</p>
+        </div>
+        
+
+        <!-- questions -->
+        <div class="">
+            <div class="startQuestions">
+                <h1>Explore Your IT Potential with IT4Pro!</h1>
+                <h1>Start your journey towards improvment today!</h1>
+                <a class="clickNext" href="/questions/?cod={{cco|add:'1'}}&pcod={{cco}}&mcod={{mcod}}">Start Assessment</a>
+            </div>
+        </div>
+        
+    {% elif cco == -1 %}
+
+        <!-- top image categories -->
+        <img src="{% static 'assessment/banner/assessmentBanner.jpg' %}" class="mainPageContentImg" alt="Image Not Found!">
+
+        
+        <!-- category list -->
+        <div class="categoriesLists">
+            <p class="categoriesListsItems" style="min-width: 105px;">Start</p>
+            {% for cat in categories %}
+                {% if cat.category_order in completedCategories %}
+                    <p class="categoriesListsItems greebBg">{{cat}}</p>
+                {% else %}
+                    <p class="categoriesListsItems redBg">{{cat}}</p>
+                    <!-- {% if cat.category_order <= mcod %}
+                        <p class="categoriesListsItems redBg">{{cat}}</p>
+                    {% else %}
+                        <p class="categoriesListsItems">{{cat}}</p>
+                    {% endif %} -->
+                {% endif %}
+            {% endfor %}
+            <p class="categoriesListsItems categoryActive" style="min-width: 105px;">End</p>
+        </div>
+
+
+        <!-- questions -->
+        <div class="">
+            <div class="endTab">
+                {% if aqia == 1 %}
+                    <h1>Congratulations!</h1>
+                    <h1>You've successfully completed the IT process maturity assessment.</h1>
+                    <h1>Your "IT process maturity level report" is now available in your report dashboard.</h1>
+                    <div class="endCategoryBtn">
+                        <a class="saveAndPrevious" href="/questions/?cod={{mcod|add:'-1'}}&pcod={{cco}}&mcod={{mcod}}">previous</a>
+                        <a class="clickNext" href="/result/">See your results</a>
+                    </div>
+                {% else %}
+                    <h1>You have some unanswered questions.</h1> 
+                    <h1>The categories requiring your attention are highlighted in red.</h1>
+                    <h1>Please respond to all questions to view your results.</h1>
+                    <h1>Thank you!</h1>
+                    <a class="saveAndPrevious" href="/questions/?cod={{mcod|add:'-1'}}&pcod={{cco}}&mcod={{mcod}}">previous</a>
+                {% endif %}
+            </div>
+        </div>
+
+
+    {% else %}
+        <!-- top image categories -->
+        <img src="{% static photo %}" class="mainPageContentImg" alt="Image Not Found!">
+        
+
+        <!-- heading and paraghraphs -->
+        <div class="mainPageContentText">
+            <h1>{{heading}}</h1>
+            {% for l in  paragraphs %}
+                <p>{{l.paragraph }}</p>
+            {% endfor %}    
+        </div>
+
+
+        <!-- category list -->
+        <div class="categoriesLists">
+            <p class="categoriesListsItems" style="min-width: 105px;">Start</p>
+            {% for cat in categories %}
+                {% if cco ==  cat.category_order %}
+                    <p class="categoriesListsItems categoryActive">{{cat}}</p>
+                {% else %}
+                    {% if cat.category_order in completedCategories %}
+                        <p class="categoriesListsItems greebBg">{{cat}}</p>
+                    {% else %}
+                        <p class="categoriesListsItems redBg">{{cat}}</p>
+                        <!-- {% if cat.category_order <= mcod %}
+                            <p class="categoriesListsItems redBg">{{cat}}</p>
+                        {% else %}
+                            <p class="categoriesListsItems">{{cat}}</p>
+                        {% endif %} -->
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            <p class="categoriesListsItems" style="min-width: 105px;">End</p>
+        </div>
+
+
+        <!-- questions -->
+        <div class="">
+            <input type="hidden" id="myVarCCO" name="variable" value="{{cco}}">
+            <input type="hidden" id="myVarMcod" name="variablemcod" value="{{mcod}}">
+            <form id="qForm" action="" method="POST">
+                {% csrf_token %}
+                <div class="questionsPage">
+                    {% for ques in questions %}
+                    <p>{{ques.question_order}}. {{ques}}</p>
+                    <div class="ansClass">
+                        {% if ques.id in listOfQA%}
+                            {% for k,v in listOfQA.items %}
+                                {% if ques.id == k %}
+                                    {% for ans in answers %}
+                                        {% if v == ans.id %}
+                                            <div class="subAnsClass">
+                                                <input type="radio" name="{{ques.id}}" value="{{ans.id}}" checked/>
+                                                <label for="{{ques.id}}">{{ans}}</label>
+                                            </div>
+                                        {% else %}
+                                            <div class="subAnsClass">
+                                                <input type="radio" name="{{ques.id}}" value="{{ans.id}}"/>
+                                                <label for="{{ques.id}}">{{ans}}</label>
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endif %}
+                            {% endfor %}
+                        {% else %}
+                            {% for ans in answers %}
+                                <div class="subAnsClass">
+                                    <input type="radio" name="{{ques.id}}" value="{{ans.id}}"/>
+                                    <label for="{{ques.id}}">{{ans}}</label>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                
+                    <div class="questionsEndBtn">
+                        <a id="saveAndPrevious" class="NPClick" href="/questions/?cod={{cco|add:'-1'}}">save and previous</a>
+                        <a id="saveAndNext" class="NPClick" href="/questions/?cod={{cco|add:'1'}}" >save and next</a>
+                    </div>
+                </div>
+            </form>
+            
+        </div> 
+    {% endif %}
+    
+</div>
+
+{% endblock %}

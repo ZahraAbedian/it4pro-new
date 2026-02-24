@@ -1,0 +1,193 @@
+/* ========== Variables ========== */
+:root{
+
+    /* ========== Colors ========== */
+    --white-color: hsl(0,0%,100%);
+    --black-color: hsl(0,0%,0%);
+
+    /* ========== Fonts and Sizes ========== */
+    /* 1rem = 16px */
+    --body-font: 'Vazir', Arial, sans-serif;
+    --h1-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+}
+
+/* ============ Base ============ */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body, input, button{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+html{
+    font-size: 16px;
+}
+/* ============ Login ============ */
+.login{
+    position: relative;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.bgImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.loginForm{
+    position: relative;
+    margin-inline: 1.5rem;
+    background-color: hsla(0, 0%, 100%, 0.01);
+    border: 2px solid hsla(0, 0%, 100%, 0.7);
+    padding: 2.5rem 1rem;
+    color: var(--white-color);
+    border-radius: 1rem;
+    backdrop-filter: blur(16px);
+}
+.loginFormTitle{
+    text-align: center;
+    font-size: var(--h1-font-size);
+    margin-bottom: 1.25rem;
+}
+.loginInputs, .loginBox{
+    display: grid;
+}
+
+.loginInputs{
+    row-gap: 1.25rem;
+    margin-bottom: 1rem;
+}
+.loginBox{
+    grid-template-columns: 1fr max-content;
+    column-gap: 0.75rem;
+    align-items: center;
+    border: 2px solid hsla(0, 0%, 100%, 0.7);
+    padding-inline: 1.25rem;
+    border-radius: 4rem;
+}
+.loginInput, .loginButton{
+    border: none;
+    outline: none;
+}
+
+.loginInput{
+    width: 100%;
+    background: none;
+    color: var(--white-color);
+    padding-block: 1rem;
+}
+
+.loginInput::placeholder{
+    color: var(--white-color);
+}
+
+.loginBox i{
+    font-size: 1.25rem;
+}
+
+.loginCheck, .loginCheckBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginCheck{
+    margin-bottom: 1rem;
+    font-size: var(--normal-font-size);
+}
+
+.loginCheckBox{
+    gap: 0.5rem;
+}
+
+.loginCheckInput{
+    width: 1rem;
+    height: 1rem;
+    accent-color: var(--white-color);
+}
+.loginForgot:hover{
+    text-decoration: underline;
+    color: var(--white-color);
+}
+
+.loginBtn{
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 0.6rem;
+    background-color: var(--white-color);
+    border-radius: 4rem;
+    color: var(--black-color);
+    cursor: pointer;
+}
+.signupBtn{
+    margin-top: 1rem;
+}
+
+.loginRegister{
+    text-align: center;
+}
+.loginRegister a{
+    color: var(--white-color);
+    font-weight: 900;
+}
+.loginRegister a:hover{
+    text-decoration: underline;
+}
+
+
+
+.signUpSelectDiv{
+    display: grid;
+    grid-template-columns: max-content 1fr ;
+    column-gap: 0.75rem;
+    align-items: center;
+    padding: 0.2rem;
+    width: 100%;
+}
+
+.selectCountrySignUp{
+    background: none;
+    color: var(--white-color);
+    border-radius: 4rem;
+    padding-block: 0.8rem;
+    text-align-last:center;
+}
+
+.selectCountrySignUp option {
+    /* margin: 40px; */
+    background: var(--white-color);
+    color: #000;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  }
+
+.selectCountrySignUp option:focus {
+    /* margin: 40px; */
+    background-color: rgb(216, 134, 217);
+    /* box-shadow: 0 0 10px 100px #1882A8 inset; */
+  }
+
+.messageTitle{
+    color: red;
+    text-align: center;
+    font-size: var(--normal-font-size);
+    margin-bottom: 1.25rem;
+}
+

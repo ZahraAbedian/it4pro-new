@@ -1,0 +1,57 @@
+{% extends "assessment/baseMainPage.html" %}
+{% block mainPageContent %}
+{% load static %}
+
+    <div class="mainPageContent">
+        <img src="{% static 'assessment/result/IT4PRO_logo.png' %}" alt="logo not found" class="resultImg">
+        
+        
+        
+        <!-- Main -->
+        <div class="main">
+            <h2>IDENTITY</h2>
+            <div class="card">
+                <div class="card-body">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Username</td>
+                                <td>:</td>
+                                <td>{{username}}</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>:</td>
+                                <td>{{email}}</td>
+                            </tr>
+                            <tr>
+                                <td>Company Name</td>
+                                <td>:</td>
+                                <td>{{companyname}}</td>
+                            </tr>
+                            <tr>
+                                <td>Country</td>
+                                <td>:</td>
+                                <td>{{country}}</td>
+                            </tr>
+                            <tr>
+                                <td>Industry</td>
+                                <td>:</td>
+                                <td>{{industry}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+    
+
+{% endblock %}

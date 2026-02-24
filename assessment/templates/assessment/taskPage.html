@@ -1,0 +1,57 @@
+{% extends "assessment/baseMainPage.html" %}
+{% block mainPageContent %}
+{% load static %}
+<script src="{% static 'assessment/taskPage.js' %}" ></script>
+<div class="dflex w100pe pt30 h100vh taskMain">
+    <div class="w60pe">
+        <img src="{% static PIPhoto %}" alt="image not found" class="imageTask">
+        <div class="w100pe dflexCol mt10 taskList">
+            <form action="" method="post">
+                {% csrf_token %}
+                <input type="hidden" id="catIdPI" name="catIdPI" value="{{catIdPI}}">
+                <div class="dflex m10 flex-spacebetween">
+                    <p class="TitleCatName">{{catName}}</p>
+                    <input type="submit" value="save changes" class="taskSave">
+                </div>
+                <div class="mh45vh taskListInner">
+                    {% for k,v in tasksList.items %}
+                        {% if v.0 == True %}
+                            <div class="m10 taskDiv" onclick="showTaskDetails(this)" comDate = "{{v.2}}">
+                                <input onclick="toggleLineThrough(this)" type="checkbox" name="{{k}}" id="taskckeck_{{k}}" checked>
+                                <p class="taskParaghrapgsList decLine">{{v.1}}</p>
+                                <!-- <label for="taskckeck_{{k}}">{{v.1}}</label> -->
+                            </div>
+                        {% else %}
+                            <div class="m10 taskDiv" onclick="showTaskDetails(this)" comDate = "{{v.2}}">
+                                <input onclick="toggleLineThrough(this)" type="checkbox" name="{{k}}" id="taskckeck_{{k}}">
+                                <p class="taskParaghrapgsList ">{{v.1}}</p>
+                                <!-- <label for="taskckeck_{{k}}">{{v.1}}</label> -->
+                            </div>
+                        {% endif %}
+                    
+                    
+                    <!-- {{v.0}}
+                    {{v.1}} -->
+                {% endfor %}
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="w40pe taskMainrightDiv">
+        <div class="m10 dectailDiv">
+            <p class="m10 TitleCatName">{{catName}}</p>
+            <p class="m10" id="ShowMore"></p>
+        </div>
+        <hr>
+        <div class="dateDiv">
+            <i class="fa fa-calendar-check" aria-hidden="true"></i>
+            <p id="taskDateCom"></p>
+        </div>
+        <div class="btnDiv">
+            <button class="taskBtn">Add attachment</button>
+            <button class="taskBtn">AI Assistant</button>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}

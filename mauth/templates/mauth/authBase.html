@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+
+    <link href="{% static 'mauth/fontawesome/css/fontawesome.css' %}" rel="stylesheet">
+    <link href="{% static 'mauth/fontawesome/css/brands.css' %}" rel="stylesheet">
+    <link href="{% static 'mauth/fontawesome/css/solid.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'mauth/loginPage.css' %}">
+</head>
+<body>
+    <div class="login">
+        <img src="{% static 'mauth/login-bg.png' %}" alt="background image not found" class="bgImage">
+        {% block form %}
+        {% endblock %}
+    </div>
+</body>
+</html>

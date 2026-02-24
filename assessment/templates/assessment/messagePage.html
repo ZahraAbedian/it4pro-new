@@ -1,0 +1,12 @@
+{% extends "assessment/baseMainPage.html" %}
+{% block mainPageContent %}
+{% load static %}
+
+    <div class="mainPageContent">
+        <img src="{% static 'assessment/result/IT4PRO_logo.png' %}" alt="logo not found" class="resultImg">
+        <h1>{{headingMessage}}</h1>
+        <p>{{paragraphMessage}}</p>        
+    </div>
+
+
+{% endblock %}

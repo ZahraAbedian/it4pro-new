@@ -1,0 +1,62 @@
+{% extends "mauth/authBase.html" %}
+{% block form %}
+<form action="" class="loginForm" method="post" >
+    {% csrf_token %}
+    <h1 class="loginFormTitle">signup page</h1>
+    <h2 class="messageTitle"><pre>{{signUpMessage }}</pre></h2> 
+
+    <div class="loginInputs">
+        <div class="loginBox">
+            <input type="text" placeholder="username" name="username" required class="loginInput">
+            <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+
+        <div class="loginBox">
+            <input type="email" placeholder="email" name="email" required class="loginInput">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+
+        <div class="loginBox">
+            <input type="password" placeholder="password" name="pass" required class="loginInput">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+        </div>
+
+        <div class="loginBox">
+            <input type="password" placeholder="confirm password" name="confpass" required class="loginInput">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+        </div>
+
+        <div class="loginBox">
+            <input type="text" placeholder="company name" name="companyName" required class="loginInput">
+            <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+
+    </div>
+
+    <div class="signUpSelectDiv">
+        <label for="countrySelect">Country:</label>
+
+        <select name="countrySelect" id="countrySelect" class="selectCountrySignUp">
+            {% for country in countries %}
+                <option value={{country.id}}>{{country.country}}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div class="signUpSelectDiv">
+        <label for="industrySelect">Industry:</label>
+
+        <select name="industrySelect" id="industrySelect" class="selectCountrySignUp">
+            {% for industry in industries %}
+                <option value={{industry.id}}>{{industry.industry}}</option>
+            {% endfor %}
+        </select>
+    </div>
+    
+
+
+    <button type="submit" class="loginBtn signupBtn"> sign up</button>
+
+
+</form>
+{% endblock %}

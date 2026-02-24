@@ -1,0 +1,99 @@
+{% extends "assessment/baseMainPage.html" %}
+{% block mainPageContent %}
+{% load static %}
+<div class="resultPageContent">
+    
+    <img src="{% static 'assessment/result/IT4PRO_logo.png' %}" alt="logo not found" class="resultImg">
+
+    <p class="headingh3 mb35">Thank you for taking the</p>
+    <p class="headingh2 mb95">ITSM Maturity Assessment</p>
+    <p class="headingh1 mb95">Your Overall ITSM Maturity Level is:</p>
+    <img src="{% static fsi %}" alt="logo not found" class="mb190">
+
+    <p class="headingh1 mb35">IT4PRO</p>
+    <p class="headingh1 mb95">ITSM Maturity Assessment</p>
+    <img src="{% static 'assessment/result/levels.png' %}" alt="logo not found" class="resultImg">
+
+    <div class="scoreDescrip">
+        <p class="sdTitle" style="background-color: rgb(244, 9, 72);">Initial</p>
+        <p class="sdText">At Level 1, organizations have ad hoc and chaotic ITSM processes that are often
+            unpredictable and poorly controlled. There is a lack of defined ITSM processes, and success
+            depends on individual effort and heroics. Organizations at Level 1 typically struggle with
+            inconsistent service delivery, high incident rates, and unplanned outages.</p>
+
+    </div>
+
+    <div class="scoreDescrip">
+        <p class="sdTitle" style="background-color: rgb(255, 85, 0);">Managed</p>
+        <p class="sdText">At Level 2, organizations begin to establish basic ITSM processes, discipline, and control.
+            They define and document standard IT service management processes like incident
+            management, change management and etc. While these processes may still be somewhat
+            reactive, there is a focus on planning, tracking, and ensuring that IT services are delivered
+            according to established procedures.</p>
+
+    </div>
+
+    <div class="scoreDescrip">
+        <p class="sdTitle" style="background-color: rgb(255, 255, 0);">Defined</p>
+        <p class="sdText">At Level 3, organizations have well-defined and standardized ITSM processes tailored to
+            specific services and organizational needs. There is a focus on process improvement and
+            optimization, emphasizing the institutionalization of best practices and lessons learned from
+            service delivery. ITSM processes are proactive and consistently applied across the
+            organization.</p>
+
+    </div>
+
+    <div class="scoreDescrip">
+        <p class="sdTitle" style="background-color: #0f0;">Quantitatively Managed</p>
+        <p class="sdText">At Level 4, organizations implement quantitative ITSM management practices to control and
+            manage service performance. They collect and analyze data (such as service level metrics and
+            incident trends) to understand variation, predict outcomes, and make data-driven decisions
+            regarding service improvements. Continuous measurement and improvement efforts aim to
+            achieve predictable and stable service performance.</p>
+
+    </div>
+
+    <div class="scoreDescrip">
+        <p class="sdTitle" style="background-color: rgb(0, 95, 0);">Optimizing</p>
+        <p class="sdText">At Level 5, organizations focus on continuous improvement and innovation within their
+            ITSM processes. They actively seek out opportunities to enhance service delivery,
+            responsiveness, and user experience through experimentation, innovation, and organizational
+            learning. There is a culture of excellence in IT service management, coupled with a
+            commitment to driving ongoing improvement and innovation throughout the organization.</p>
+
+    </div>
+
+    <br><br><br>
+
+
+    <p class="headingh1 mb35">Your Result Breakdown</p>
+    <div class="scoreDescrip">
+        <p class="sdText">Turn your assessment insights into impactful actions and jump on our ITSM
+            Improvement product. The IT4PRO ITSM Improvement will analyze your results,
+            identify opportunities, and craft a roadmap to drive your business forward.</p>
+        <p class="sdText">We’ve assessed you against the following ITSM Processes:</p>
+    </div>
+    
+    <!-- <img src="{% static 'assessment/test.png' %}" alt="logo not found" class="resultImg"> -->
+    <img src="{% static radarChartName %}" alt="image not found" class="charts">
+    <img src="{% static barChartName %}" alt="image not found" class="charts mb95">
+
+    {% for mah in RPDC %}
+        <img src="{% static mah.0 %}" alt="image not found" class="charts">
+        <h1 class="mb35">{{mah.1}}</h1>
+        <img src="{% static mah.2 %}" alt="image not found" class="charts">
+        <h2 class="levelDesc">Level {{mah.3}} <br> As-Is Status:</h2>
+        <ul class="paraphs">
+            {% for par in mah.4 %}
+            <li>
+                {{par}}
+            </li>
+        
+            {% endfor %}
+        </ul>
+        
+    {% endfor %}
+
+</div>
+
+{% endblock %}

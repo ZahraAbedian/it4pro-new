@@ -1,0 +1,1150 @@
+[
+{
+ "model": "assessment.categories",
+ "pk": 4,
+ "fields": {
+  "category": "Availability Management",
+  "information": "Availability",
+  "category_order": 1,
+  "photo": "3qACFixYNb/availability-Banner.jpg",
+  "heading": "Availability Management"
+ }
+},
+{
+ "model": "assessment.categories",
+ "pk": 5,
+ "fields": {
+  "category": "Capacity Management",
+  "information": "capacity",
+  "category_order": 2,
+  "photo": "3qACFixYNb/capacity-Banner.jpg",
+  "heading": "Default Heading"
+ }
+},
+{
+ "model": "assessment.categories",
+ "pk": 6,
+ "fields": {
+  "category": "Change Management",
+  "information": "change",
+  "category_order": 3,
+  "photo": "3qACFixYNb/Change-banner.jpg",
+  "heading": "Default Heading"
+ }
+},
+{
+ "model": "assessment.categories",
+ "pk": 7,
+ "fields": {
+  "category": "Configuration Management",
+  "information": "configuration",
+  "category_order": 4,
+  "photo": "3qACFixYNb/config-banner.jpg",
+  "heading": "Default Heading"
+ }
+},
+{
+ "model": "assessment.categories",
+ "pk": 8,
+ "fields": {
+  "category": "Service Continuity Management",
+  "information": "continuity",
+  "category_order": 5,
+  "photo": "3qACFixYNb/continuity-banner.jpg",
+  "heading": "Default Heading"
+ }
+},
+{
+ "model": "assessment.categories",
+ "pk": 9,
+ "fields": {
+  "category": "Financial Management",
+  "information": "financial",
+  "category_order": 6,
+  "photo": "3qACFixYNb/financial-Banner.jpg",
+  "heading": "Default Heading"
+ }
+},
+{
+ "model": "assessment.categories",
+ "pk": 10,
+ "fields": {
+  "category": "Incident Management",
+  "information": "incident",
+  "category_order": 7,
+  "photo": "3qACFixYNb/incident-banner.jpg",
+  "heading": "Default Heading"
+ }
+},
+{
+ "model": "assessment.categories",
+ "pk": 11,
+ "fields": {
+  "category": "Problem Management",
+  "information": "problem",
+  "category_order": 8,
+  "photo": "3qACFixYNb/problem-Banner.jpg",
+  "heading": "Default Heading"
+ }
+},
+{
+ "model": "assessment.categories",
+ "pk": 12,
+ "fields": {
+  "category": "Release Management",
+  "information": "release",
+  "category_order": 9,
+  "photo": "3qACFixYNb/release-Banner.jpg",
+  "heading": "Default Heading"
+ }
+},
+{
+ "model": "assessment.categories",
+ "pk": 13,
+ "fields": {
+  "category": "Service Level Management",
+  "information": "service level",
+  "category_order": 10,
+  "photo": "3qACFixYNb/sla-Banner.jpg",
+  "heading": "Default Heading"
+ }
+},
+{
+ "model": "assessment.answers",
+ "pk": 1,
+ "fields": {
+  "answer": "Completely"
+ }
+},
+{
+ "model": "assessment.answers",
+ "pk": 2,
+ "fields": {
+  "answer": "Partially"
+ }
+},
+{
+ "model": "assessment.answers",
+ "pk": 3,
+ "fields": {
+  "answer": "Not at all"
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 7,
+ "fields": {
+  "question": "Is the Service Availability Management process clearly defined within the organization, with specific documentation outlining its scope and responsibilities for ensuring service uptime?",
+  "question_fk": 4,
+  "question_order": 1
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 8,
+ "fields": {
+  "question": "Are explicit inputs (e.g., Service Level Agreements (SLAs), availability requirements) and outputs (e.g., availability reports, incident analysis) established for the Service Availability Management workflow?",
+  "question_fk": 4,
+  "question_order": 2
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 9,
+ "fields": {
+  "question": "Is there a documented procedure and an assigned individual responsible for overseeing the execution of Service Availability Management activities and addressing any issues that arise?",
+  "question_fk": 4,
+  "question_order": 3
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 10,
+ "fields": {
+  "question": "Is there a commitment from management to prioritize the maintenance and enhancement of service availability, ensuring timely execution of the Service Availability Management process?",
+  "question_fk": 4,
+  "question_order": 4
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 11,
+ "fields": {
+  "question": "Are routine reports on service availability metrics (e.g., uptime, downtime, Mean Time To Repair) generated and maintained to track performance against defined targets?",
+  "question_fk": 4,
+  "question_order": 5
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 12,
+ "fields": {
+  "question": "Are key performance indicators (KPIs) related to service availability identified (e.g., service uptime percentage, incident response times), and are appropriate tools employed to monitor and evaluate them?",
+  "question_fk": 4,
+  "question_order": 6
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 13,
+ "fields": {
+  "question": "Is relevant information related to service availability, including historical performance data, incidents, and identified risks, systematically collected and utilized for decision-making?",
+  "question_fk": 4,
+  "question_order": 7
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 14,
+ "fields": {
+  "question": "Is there an integrated system in place that facilitates the sharing of information related to service availability among relevant processes (e.g., Incident Management, Problem Management)?",
+  "question_fk": 4,
+  "question_order": 8
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 15,
+ "fields": {
+  "question": "Are stakeholder satisfaction and expectations regarding service availability regularly assessed and measured to ensure alignment with organizational goals and user needs?",
+  "question_fk": 4,
+  "question_order": 9
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 16,
+ "fields": {
+  "question": "Is there a structured approach to using the insights gleaned from reports and performance evaluations to drive continuous improvement in the Service Availability Management process?",
+  "question_fk": 4,
+  "question_order": 10
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 17,
+ "fields": {
+  "question": "Is the Capacity Management process clearly defined within the organization, with specific documentation outlining its scope and responsibilities for managing capacity effectively across services?",
+  "question_fk": 5,
+  "question_order": 1
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 18,
+ "fields": {
+  "question": "Are explicit inputs (e.g., demand forecasts, current usage data) and outputs (e.g., capacity reports, future capacity plans) established for the Capacity Management workflow?",
+  "question_fk": 5,
+  "question_order": 2
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 19,
+ "fields": {
+  "question": "Is there a documented procedure and a designated individual responsible for overseeing the execution of Capacity Management activities and resolving any issues that arise?",
+  "question_fk": 5,
+  "question_order": 3
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 20,
+ "fields": {
+  "question": "Is there a commitment from management to prioritize capacity planning and management activities to ensure the process is executed in a timely manner?",
+  "question_fk": 5,
+  "question_order": 4
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 21,
+ "fields": {
+  "question": "Are regular reports on capacity metrics (e.g., utilization rates, performance against capacity plans) generated and maintained to track capacity performance and identify trends?",
+  "question_fk": 5,
+  "question_order": 5
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 22,
+ "fields": {
+  "question": "Is the Change Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing changes effectively?",
+  "question_fk": 6,
+  "question_order": 1
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 23,
+ "fields": {
+  "question": "Are explicit inputs (e.g., Change Requests, impact assessments) and outputs (e.g., Change schedules, implementation reports) established for the Change Management workflow?",
+  "question_fk": 6,
+  "question_order": 2
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 24,
+ "fields": {
+  "question": "Is there a documented procedure and a designated individual responsible for overseeing the Change Management process and addressing any issues that arise?",
+  "question_fk": 6,
+  "question_order": 3
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 25,
+ "fields": {
+  "question": "Is there a commitment from management to prioritize and execute change requests in a timely manner, ensuring minimal disruption to services?",
+  "question_fk": 6,
+  "question_order": 4
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 26,
+ "fields": {
+  "question": "Are standard reports on change activities (e.g., Change success rates, outstanding Change Requests) regularly generated and maintained to track the effectiveness of the Change Management process?",
+  "question_fk": 6,
+  "question_order": 5
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 27,
+ "fields": {
+  "question": "Are key performance indicators (KPIs) related to capacity management identified (e.g., CPU usage, memory utilization), and are appropriate tools employed to monitor and evaluate them?",
+  "question_fk": 5,
+  "question_order": 6
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 28,
+ "fields": {
+  "question": "Is relevant information related to capacity management, including historical performance data, incidents, and identified risks, systematically collected and utilized for informed decision-making?",
+  "question_fk": 5,
+  "question_order": 7
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 29,
+ "fields": {
+  "question": "Is there an integrated system in place that facilitates the exchange of capacity-related information among relevant processes (e.g., Incident Management, Change Management)?",
+  "question_fk": 5,
+  "question_order": 8
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 30,
+ "fields": {
+  "question": "Are stakeholder satisfaction and expectations regarding capacity management regularly assessed and measured to ensure alignment with business requirements and service performance?",
+  "question_fk": 5,
+  "question_order": 9
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 31,
+ "fields": {
+  "question": "Is there a structured approach to utilizing the insights gained from reports and evaluations to drive continuous improvement in the Capacity Management process?",
+  "question_fk": 5,
+  "question_order": 10
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 32,
+ "fields": {
+  "question": "Are key performance indicators (KPIs) related to Change Management identified (e.g., number of successful changes, average time to implement changes), and are appropriate tools employed to monitor and evaluate their performance?",
+  "question_fk": 6,
+  "question_order": 6
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 33,
+ "fields": {
+  "question": "Is relevant information related to Change Management, including historical data, lessons learned, and identified risks, systematically collected and utilized for decision-making and process improvement?",
+  "question_fk": 6,
+  "question_order": 7
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 34,
+ "fields": {
+  "question": "Is there an integrated system in place that facilitates the exchange of change-related information among relevant processes (e.g., Incident Management, Configuration Management)?",
+  "question_fk": 6,
+  "question_order": 8
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 35,
+ "fields": {
+  "question": "Are stakeholder satisfaction and expectations regarding the Change Management process regularly assessed and measured to ensure alignment with business needs and objectives?",
+  "question_fk": 6,
+  "question_order": 9
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 36,
+ "fields": {
+  "question": "Is there a structured approach to leveraging insights from reports and performance evaluations to drive continuous improvement within the Change Management process?",
+  "question_fk": 6,
+  "question_order": 10
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 37,
+ "fields": {
+  "question": "Is the Configuration Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing configuration items (CIs)?",
+  "question_fk": 7,
+  "question_order": 1
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 38,
+ "fields": {
+  "question": "Are explicit inputs (e.g., Configuration Requests, updates to CIs) and outputs (e.g., Configuration Management Database (CMDB) updates, configuration reports) established for the Configuration Management workflow?",
+  "question_fk": 7,
+  "question_order": 2
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 39,
+ "fields": {
+  "question": "Is there a documented procedure and a designated individual responsible for overseeing the Configuration Management process and addressing any issues that arise?",
+  "question_fk": 7,
+  "question_order": 3
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 40,
+ "fields": {
+  "question": "Is there a commitment from management to prioritize and execute configuration updates and changes in a timely manner to ensure integrity and accuracy of the configuration data?",
+  "question_fk": 7,
+  "question_order": 4
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 41,
+ "fields": {
+  "question": "Are standard reports on configuration items (e.g., CI status, configuration baselines) regularly generated and maintained to track the effectiveness of the Configuration Management process?",
+  "question_fk": 7,
+  "question_order": 5
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 42,
+ "fields": {
+  "question": "Are key performance indicators (KPIs) related to Configuration Management identified (e.g., accuracy of the CMDB, number of discrepancies identified), and are appropriate tools employed to monitor and evaluate their performance?",
+  "question_fk": 7,
+  "question_order": 6
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 43,
+ "fields": {
+  "question": "Is relevant information related to Configuration Management, including historical changes, incidents, and identified risks, systematically collected and utilized for informed decision-making and process improvement?",
+  "question_fk": 7,
+  "question_order": 7
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 44,
+ "fields": {
+  "question": "Is there an integrated system in place that facilitates the exchange of configuration-related information among relevant processes (e.g., Change Management, Incident Management)?",
+  "question_fk": 7,
+  "question_order": 8
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 45,
+ "fields": {
+  "question": "Are stakeholder satisfaction and expectations regarding the Configuration Management process regularly assessed and measured to ensure alignment with business needs and requirements?",
+  "question_fk": 7,
+  "question_order": 9
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 46,
+ "fields": {
+  "question": "Is there a structured approach to using insights from reports and performance evaluations to drive continuous improvement within the Configuration Management process?",
+  "question_fk": 7,
+  "question_order": 10
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 47,
+ "fields": {
+  "question": "Is the IT Service Continuity Management process clearly defined within the organization, with explicit documentation outlining its scope and responsibilities for ensuring service resilience?",
+  "question_fk": 8,
+  "question_order": 1
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 48,
+ "fields": {
+  "question": "Are specific inputs (e.g., Business Impact Analysis data, Risk Assessment results) and outputs (e.g., Service Continuity Plans, testing outcomes) established for the IT Service Continuity workflow?",
+  "question_fk": 8,
+  "question_order": 2
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 49,
+ "fields": {
+  "question": "Is there a documented procedure and designated person responsible for overseeing the execution of ITSCM activities, including validating the steps of the process and addressing any issues encountered?",
+  "question_fk": 8,
+  "question_order": 3
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 50,
+ "fields": {
+  "question": "Is there a commitment from leadership to prioritize continuity planning activities and ensure timely execution of the IT Service Continuity Management process, especially during incidents?",
+  "question_fk": 8,
+  "question_order": 4
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 51,
+ "fields": {
+  "question": "Are standard reports on IT Service Continuity performance, including the status of Service Continuity Plans and results from tests and exercises, generated and maintained on a regular basis?",
+  "question_fk": 8,
+  "question_order": 5
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 52,
+ "fields": {
+  "question": "Are key performance indicators (KPIs) for IT Service Continuity Management identified (e.g., Recovery Time Objectives, Recovery Point Objectives), and are appropriate tools used to measure and analyze them?",
+  "question_fk": 8,
+  "question_order": 6
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 53,
+ "fields": {
+  "question": "Is relevant information related to IT Service Continuity, including lessons learned, identified risks, and past incidents, systematically collected and utilized to enhance continuity planning efforts?",
+  "question_fk": 8,
+  "question_order": 7
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 54,
+ "fields": {
+  "question": "Is there an integrated information system that enables the exchange of data and insights between the IT Service Continuity Management process and other related processes (e.g., Incident Management, Change Management)?",
+  "question_fk": 8,
+  "question_order": 8
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 55,
+ "fields": {
+  "question": "Are stakeholder satisfaction and expectations regarding IT service continuity regularly assessed through surveys or feedback mechanisms to ensure the process aligns with business needs?",
+  "question_fk": 8,
+  "question_order": 9
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 56,
+ "fields": {
+  "question": "Is there a systematic approach to utilizing the insights gained from reports and evaluations to drive continuous improvement in the effectiveness of the IT Service Continuity Management process?",
+  "question_fk": 8,
+  "question_order": 10
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 57,
+ "fields": {
+  "question": "Is the Financial Management process clearly defined within the organization, with documented procedures outlining its scope, roles, and responsibilities for managing IT financial resources?",
+  "question_fk": 9,
+  "question_order": 1
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 58,
+ "fields": {
+  "question": "Are explicit inputs (e.g., budget proposals, financial forecasts) and outputs (e.g., financial reports, cost allocation statements) established for the Financial Management workflow?",
+  "question_fk": 9,
+  "question_order": 2
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 59,
+ "fields": {
+  "question": "Is there a documented procedure and a designated individual responsible for overseeing the Financial Management process and addressing any financial discrepancies or issues that arise?",
+  "question_fk": 9,
+  "question_order": 3
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 60,
+ "fields": {
+  "question": "Is there a commitment from management to prioritize and execute financial planning and reporting activities in a timely manner to support organizational objectives?",
+  "question_fk": 9,
+  "question_order": 4
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 61,
+ "fields": {
+  "question": "Are standard reports on financial performance (e.g., expenditure reports, budget variances) regularly generated and maintained to ensure transparency and effective oversight of financial management?",
+  "question_fk": 9,
+  "question_order": 5
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 62,
+ "fields": {
+  "question": "Are key performance indicators (KPIs) related to Financial Management identified (e.g., budget adherence, cost savings achieved), and are appropriate tools employed to monitor and evaluate their performance?",
+  "question_fk": 9,
+  "question_order": 6
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 63,
+ "fields": {
+  "question": "Is relevant financial information, including historical data, financial risks, and lessons learned, systematically collected and utilized for informed financial decision-making and process improvement?",
+  "question_fk": 9,
+  "question_order": 7
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 64,
+ "fields": {
+  "question": "Is there an integrated system in place that facilitates the exchange of financial information among relevant processes (e.g., Capacity Management, Service Portfolio Management)?",
+  "question_fk": 9,
+  "question_order": 8
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 65,
+ "fields": {
+  "question": "Are stakeholder satisfaction and expectations regarding the Financial Management process regularly assessed and measured to ensure alignment with organizational goals?",
+  "question_fk": 9,
+  "question_order": 9
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 66,
+ "fields": {
+  "question": "Is there a structured approach to using insights from financial reports and performance evaluations to drive continuous improvement within the Financial Management process?",
+  "question_fk": 9,
+  "question_order": 10
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 67,
+ "fields": {
+  "question": "Is the Incident Management process clearly defined within the organization, with documented procedures outlining its scope, objectives, and responsibilities for managing incidents?",
+  "question_fk": 10,
+  "question_order": 1
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 68,
+ "fields": {
+  "question": "Are explicit inputs (e.g., incident reports, user tickets) and outputs (e.g., incident resolution reports, knowledge base updates) established for the Incident Management workflow?",
+  "question_fk": 10,
+  "question_order": 2
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 69,
+ "fields": {
+  "question": "Is there a documented procedure and designated individual responsible for overseeing the Incident Management process and resolving any issues that arise during incident handling?",
+  "question_fk": 10,
+  "question_order": 3
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 70,
+ "fields": {
+  "question": "Is there a commitment from management to prioritize and address incidents in a timely manner to minimize impact on business operations and maintain service quality?",
+  "question_fk": 10,
+  "question_order": 4
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 71,
+ "fields": {
+  "question": "Are standard reports on incident performance (e.g., incident response times, resolution times, incident trends) regularly generated and maintained to provide insights into incident management effectiveness?",
+  "question_fk": 10,
+  "question_order": 5
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 72,
+ "fields": {
+  "question": "Are key performance indicators (KPIs) related to Incident Management identified (e.g., number of incidents resolved within SLA, average resolution time), and are appropriate tools used to monitor and evaluate these metrics?",
+  "question_fk": 10,
+  "question_order": 6
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 73,
+ "fields": {
+  "question": "Is relevant information related to the Incident Management process, including historical incident data, root cause analyses, and lessons learned, systematically collected and utilized for informed decision-making and process improvement?",
+  "question_fk": 10,
+  "question_order": 7
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 74,
+ "fields": {
+  "question": "Is there an integrated system in place that facilitates the exchange of incident-related information among relevant processes (e.g., Problem Management, Change Management)?",
+  "question_fk": 10,
+  "question_order": 8
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 75,
+ "fields": {
+  "question": "Are stakeholder satisfaction and expectations regarding the Incident Management process regularly assessed and measured to ensure alignment with user needs and service delivery objectives?",
+  "question_fk": 10,
+  "question_order": 9
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 76,
+ "fields": {
+  "question": "Is there a structured approach to using insights from incident reports and performance evaluations to drive continuous improvement within the Incident Management process?",
+  "question_fk": 10,
+  "question_order": 10
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 77,
+ "fields": {
+  "question": "Is the Problem Management process clearly defined within the organization, with documented procedures outlining its scope, objectives, and responsibilities for managing problems?",
+  "question_fk": 11,
+  "question_order": 1
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 78,
+ "fields": {
+  "question": "Are specific inputs (e.g., incident records, problem records) and outputs (e.g., known error records, change requests) established for the Problem Management workflow?",
+  "question_fk": 11,
+  "question_order": 2
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 79,
+ "fields": {
+  "question": "Is there a documented procedure and a designated individual responsible for overseeing the Problem Management process and handling any issues that arise during problem resolution?",
+  "question_fk": 11,
+  "question_order": 3
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 80,
+ "fields": {
+  "question": "Is there a commitment from management to prioritize problems and execute the Problem Management process in a timely manner to minimize impact on ongoing incidents and service delivery?",
+  "question_fk": 11,
+  "question_order": 4
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 81,
+ "fields": {
+  "question": "Are standard reports on problem performance (e.g., status of known errors, root cause analyses, trends in recurring incidents) regularly generated and maintained to provide insights into problem management effectiveness?",
+  "question_fk": 11,
+  "question_order": 5
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 82,
+ "fields": {
+  "question": "Are key performance indicators (KPIs) related to Problem Management identified (e.g., percentage of problems resolved within defined timelines, average time to identify the root cause) and are appropriate tools used to monitor and evaluate these metrics?",
+  "question_fk": 11,
+  "question_order": 6
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 83,
+ "fields": {
+  "question": "Is relevant information related to the Problem Management process, including historical data, resolutions, root causes, and risks, systematically collected and utilized to inform decision-making and process improvement?",
+  "question_fk": 11,
+  "question_order": 7
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 84,
+ "fields": {
+  "question": "Is there an integrated system in place that facilitates the exchange of problem-related information among relevant processes (e.g., Incident Management, Change Management)?",
+  "question_fk": 11,
+  "question_order": 8
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 85,
+ "fields": {
+  "question": "Are stakeholder satisfaction and expectations regarding the Problem Management process regularly assessed and measured to ensure alignment with business needs and service quality?",
+  "question_fk": 11,
+  "question_order": 9
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 86,
+ "fields": {
+  "question": "Is there a structured approach to using insights from problem reports and performance evaluations to drive continuous improvement within the Problem Management process?",
+  "question_fk": 11,
+  "question_order": 10
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 87,
+ "fields": {
+  "question": "Is the Release Management process clearly defined within the organization, with documented procedures outlining its scope, objectives, and responsibilities related to planning, scheduling, and controlling releases?",
+  "question_fk": 12,
+  "question_order": 1
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 88,
+ "fields": {
+  "question": "Are specific inputs (e.g., change requests, release plans) and outputs (e.g., release notes, deployment instructions) clearly established for the Release Management workflow?",
+  "question_fk": 12,
+  "question_order": 2
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 89,
+ "fields": {
+  "question": "Is there a documented procedure and a designated individual responsible for overseeing the Release Management process and ensuring adherence to the defined steps and resolving any issues that arise?",
+  "question_fk": 12,
+  "question_order": 3
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 90,
+ "fields": {
+  "question": "Is there a commitment from management to prioritize releases and execute the Release Management process in a timely manner to adhere to project schedules and minimize disruption to services?",
+  "question_fk": 12,
+  "question_order": 4
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 91,
+ "fields": {
+  "question": "Are standard reports on release performance (e.g., success rates, number of rollbacks, release schedules) regularly generated and maintained to provide insights into the effectiveness of the Release Management process?",
+  "question_fk": 12,
+  "question_order": 5
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 92,
+ "fields": {
+  "question": "Are key performance indicators (KPIs) related to Release Management identified (e.g., percentage of releases deployed successfully, average lead time for releases) and are appropriate tools used to monitor and evaluate these metrics?",
+  "question_fk": 12,
+  "question_order": 6
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 93,
+ "fields": {
+  "question": "Is relevant information regarding the Release Management process, including lessons learned from previous releases, issues encountered, and risks identified, systematically collected and utilized for continuous improvement?",
+  "question_fk": 12,
+  "question_order": 7
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 94,
+ "fields": {
+  "question": "Is there an integrated system in place that facilitates the exchange of release-related information among relevant processes (e.g., Change Management, Configuration Management, Incident Management)?",
+  "question_fk": 12,
+  "question_order": 8
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 95,
+ "fields": {
+  "question": "Are stakeholder satisfaction and expectations regarding the Release Management process regularly assessed and measured to ensure alignment with business needs and service delivery objectives?",
+  "question_fk": 12,
+  "question_order": 9
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 96,
+ "fields": {
+  "question": "Is there a structured approach to using insights from release reports and performance evaluations to drive continuous improvement within the Release Management process?",
+  "question_fk": 12,
+  "question_order": 10
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 97,
+ "fields": {
+  "question": "Is the Service Level Management process clearly defined within the organization, with documented procedures outlining its scope, objectives, and responsibilities for managing service level agreements (SLAs)?",
+  "question_fk": 13,
+  "question_order": 1
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 98,
+ "fields": {
+  "question": "Are specific inputs (e.g., business requirements, SLA templates) and outputs (e.g., agreed SLAs, service level reports) clearly established for the Service Level Management workflow?",
+  "question_fk": 13,
+  "question_order": 2
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 99,
+ "fields": {
+  "question": "Is there a documented procedure and a designated individual responsible for overseeing the Service Level Management process, ensuring compliance with SLAs, and addressing any issues related to service performance?",
+  "question_fk": 13,
+  "question_order": 3
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 100,
+ "fields": {
+  "question": "Is there a commitment from management to prioritize the fulfillment of SLAs and execute the Service Level Management process in a timely manner to ensure service quality and customer satisfaction?",
+  "question_fk": 13,
+  "question_order": 4
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 101,
+ "fields": {
+  "question": "Are standard reports on service performance (e.g., SLA compliance, service availability, response times) regularly generated and maintained to provide insights into the effectiveness of the Service Level Management process?",
+  "question_fk": 13,
+  "question_order": 5
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 102,
+ "fields": {
+  "question": "Are key performance indicators (KPIs) related to Service Level Management identified (e.g., percentage of SLAs met, number of breaches) and are appropriate tools utilized to monitor and evaluate these metrics?",
+  "question_fk": 13,
+  "question_order": 6
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 103,
+ "fields": {
+  "question": "Is relevant information regarding the Service Level Management process, including past service performance, customer feedback, and risks associated with service delivery, systematically collected and used for continuous improvement?",
+  "question_fk": 13,
+  "question_order": 7
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 104,
+ "fields": {
+  "question": "Is there an integrated system in place that facilitates the exchange of service-related information among relevant processes (e.g., Incident Management, Problem Management, Change Management)?",
+  "question_fk": 13,
+  "question_order": 8
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 105,
+ "fields": {
+  "question": "Are stakeholder satisfaction and expectations regarding service levels regularly assessed and measured to ensure alignment with business needs and service delivery objectives?",
+  "question_fk": 13,
+  "question_order": 9
+ }
+},
+{
+ "model": "assessment.questions",
+ "pk": 106,
+ "fields": {
+  "question": "Is there a structured approach to using insights from service level reports and performance evaluations to drive continuous improvement within the Service Level Management process?",
+  "question_fk": 13,
+  "question_order": 10
+ }
+},
+{
+ "model": "assessment.paragraphs",
+ "pk": 1,
+ "fields": {
+  "paragraph": "kjkjkjkjkjkjk",
+  "paragraph_fk": 4,
+  "paragraph_order": 1
+ }
+},
+{
+ "model": "assessment.paragraphs",
+ "pk": 2,
+ "fields": {
+  "paragraph": "ddsdsdsdsd",
+  "paragraph_fk": 5,
+  "paragraph_order": 2
+ }
+},
+{
+ "model": "assessment.useranswers",
+ "pk": 3,
+ "fields": {
+  "user": 1,
+  "question": 7,
+  "answer": 1
+ }
+},
+{
+ "model": "assessment.useranswers",
+ "pk": 4,
+ "fields": {
+  "user": 1,
+  "question": 8,
+  "answer": 1
+ }
+},
+{
+ "model": "assessment.useranswers",
+ "pk": 5,
+ "fields": {
+  "user": 1,
+  "question": 13,
+  "answer": 1
+ }
+},
+{
+ "model": "assessment.useranswers",
+ "pk": 6,
+ "fields": {
+  "user": 1,
+  "question": 14,
+  "answer": 3
+ }
+},
+{
+ "model": "assessment.useranswers",
+ "pk": 7,
+ "fields": {
+  "user": 1,
+  "question": 16,
+  "answer": 1
+ }
+},
+{
+ "model": "assessment.useranswers",
+ "pk": 8,
+ "fields": {
+  "user": 1,
+  "question": 15,
+  "answer": 2
+ }
+},
+{
+ "model": "assessment.useranswers",
+ "pk": 9,
+ "fields": {
+  "user": 1,
+  "question": 9,
+  "answer": 1
+ }
+},
+{
+ "model": "assessment.useranswers",
+ "pk": 10,
+ "fields": {
+  "user": 1,
+  "question": 11,
+  "answer": 2
+ }
+},
+{
+ "model": "assessment.useranswers",
+ "pk": 11,
+ "fields": {
+  "user": 1,
+  "question": 12,
+  "answer": 2
+ }
+},
+{
+ "model": "assessment.usercategories",
+ "pk": 1,
+ "fields": {
+  "user": 1,
+  "category": 7,
+  "score": 0
+ }
+},
+{
+ "model": "assessment.usercategories",
+ "pk": 2,
+ "fields": {
+  "user": 1,
+  "category": 8,
+  "score": 0
+ }
+}
+]

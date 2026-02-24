@@ -1,0 +1,38 @@
+{% extends "assessment/baseMainPage.html" %}
+{% block mainPageContent %}
+{% load static %}
+
+    <div class="mainPageContent">
+        <img src="{% static 'assessment/mainPageBanner.jpg' %}" class="mainPageContentImg" alt="image Not Found!">
+                
+        <div class="mainPageContentText">
+            <H1>Welcome to the IT4PRO Free Assessment Tool</H1>
+            <!-- <ol>
+                <li>sdfsdfsdf</li>
+                <li>sdfsdfsdf</li>
+                <li>sdfsdfsdf</li>
+                <li>sdfsdfsdf</li>
+            </ol> -->
+            <p>1. Begin your journey by selecting the Question Sets. You will be presented with all available Question Sets for your assessment.</p>
+            <p>2. Each Question Set pertains to a specific ITSM process, and all sets will be displayed when you initiate your journey.</p>
+            <p>3. Your ITSM Maturity Level will be displayed upon the completion of your responses.</p>
+            <p>4. To revisit your ITSM Maturity Level, please select the Report Dashboard, where you will have access to your report.</p>
+        </div>
+        <div class="mainPageContentItems">
+            <a href="/questions/?cod=0">
+                <div class="contentItems">
+                    <img src="{% static 'assessment/questions.jpg' %}" alt="Question Sets">
+                    <p>Question Sets</p>
+                </div>
+            </a>
+            <a href="/result">
+                <div class="contentItems">
+                    <img src="{% static 'assessment/dashboard.jpg' %}" alt="Report Dashboard">
+                    <p>Report Dashboard</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+{% endblock %}
