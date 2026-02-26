@@ -116,7 +116,7 @@ def drawRadarChart(data, categories, fileName):
              fontsize=18)
     fig.set_size_inches(8, 6)
     plt.savefig('./assessment/static/assessment/radarChart/'+fileName, dpi=200)
-    # plt.savefig('./others/test.png', dpi=200)
+    plt.savefig('./others/test.png', dpi=200)
     # plt.show()
 
 def drawBarchart(scores, categories, fileName):
