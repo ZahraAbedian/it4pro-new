@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-svos0-5$+$t1f^b7tx3y9+%di3_wk)b*p6(#+e0o(%a^%v43t*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["172.19.0.10"]
+ALLOWED_HOSTS = ["3.8.154.63", "it4pro.ca", "www.it4pro.ca"]
+
 CSRF_TRUSTED_ORIGINS = ['http://5.75.198.182:8000']
 
 # Application definition
@@ -122,7 +123,10 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'extra_static'),
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATIC_ROOT = "/app/staticfiles"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
