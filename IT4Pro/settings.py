@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'IT4Pro.wsgi.application'
+WSGI_APPLICATION = 'it4pro-new.wsgi.application'
 
 
 # Database
